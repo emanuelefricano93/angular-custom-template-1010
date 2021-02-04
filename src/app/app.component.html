@@ -1,0 +1,16 @@
+<ng-template #customTemplate>
+	<div>
+		<p>Hello I am the custom template</p>
+	</div>
+</ng-template>
+
+<div class="first">
+	<p>Override the template clicking the button</p>
+	<button (click)="setTemplate()"><p>set custom template </p></button>
+	<hello #firstHello></hello>
+</div>
+
+<div class="second">
+	<p>Template updated in the onDefaultTemplateReceived </p>
+	<hello (defaultTemplateEmitter)="onDefaultTemplateReceived($event)"></hello>
+</div>

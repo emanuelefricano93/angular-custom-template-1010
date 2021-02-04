@@ -1,0 +1,7 @@
+<ng-template #defaultTemplate>
+	<div class="default-container">
+		<p>Hello I am the default template, I was white</p>
+	</div>
+</ng-template>
+
+<ng-container *ngTemplateOutlet="customTemplate || defaultTemplate"></ng-container>

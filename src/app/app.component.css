@@ -1,0 +1,12 @@
+p {
+  font-family: Lato;
+}
+
+.first {
+  border: solid 1px black;
+}
+
+.second {
+  margin-top: 20px;
+  border: solid 1px blue;
+}
